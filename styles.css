@@ -1294,10 +1294,6 @@ li {
         padding-top: 33px;
     }
 
-    .price {
-        height: 436px;
-    }
-
     .price h2 {
         line-height: 40px;
         padding-top: 41px;
@@ -1537,5 +1533,11 @@ li {
     }
 
     
+}
+
+@media (max-width: 400px) {
+    .price {
+        height: 436px;
+    }
 }
 
