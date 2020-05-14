@@ -9,7 +9,7 @@ $(document).ready(function() {
                 breakpoint: 1025,
                 settings: { 
                   slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToScroll: 1,
                   arrows:false,
                   dots: true
                 }
@@ -18,7 +18,7 @@ $(document).ready(function() {
                 breakpoint: 701,
                 settings: { 
                   slidesToShow: 1,
-                  slidesToScroll: 2,
+                  slidesToScroll: 1,
                   arrows:false,
                   dots: true
                 }
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     });
   
-    $('.close, .popup-container').click(function(event){
+    $('.button-popup, .close, .popup-container').click(function(event){
         if(event.target == this)
         $('.popup')
         .animate({opacity: 0, top: '45%'}, 200,
@@ -85,7 +85,25 @@ $(document).ready(function() {
                 user_phone: {
                     required: true,
                 },
-            }, 
+            },
+            
+            submitHandler(form) {
+                let th = $(form);
+
+                $.ajax({
+                type: 'POST',
+                url: 'mail.php',
+                data: th.serialize(),
+            }).done(() => {
+
+                console.log('Отправленно')
+              
+              th.trigger('reset');
+              $('.popup-container').fadeOut(400);  
+            });
+
+            return false;
+            }
         });
     });
 });
