@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дипломная работа</title>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container flexbox">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#service" class="menu__link">Услуги</a></li>
+                    <li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
+                    <li class="menu__item"><a href="#cost" class="menu__link">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="tel:+7(499)995-55-77" class="header-contacts__tel">+7 (499) 995-55-77</a>
+            <button  class="header-contacts__call">Заказать звонок</button>
+            <button  class="header-contacts__call__mobile"></button>  
+        </div>   
+    </header>
+    <main class="main">
+        <div class="popup-menu-cont">
+        </div>
+        <section class="presentation">     
+            <div class="container flexbox">    
+                <div class="main-block flexbox">
+                    <div class="main-block__title">
+                        <h1 class="main-block__name">Дмитрий Алексеев</h1>
+                        <p class="main-block__profession">Frontend-разработчик и веб-верстальщик</p>
+                    </div>
+                    <button class="button">Узнать больше</button>
+                </div>
+                <div class="main-img">
+                    <img src="img/main-img-mobile.png" alt="man" class="main-img__mobile">
+                    <img src="img/man.png" alt="man" class="main-img__front"> 
+                    <img src="img/shadow.png" alt="shadow" class="main-img__shadow">
+                </div>
+            </div>
+            <div class="elements">
+                <span class="elements_el-1 el">{ }</span>
+                <span class="elements_el-2 el">&lt;div&gt;</span>
+                <span class="elements_el-3 el">#</span>
+                <span class="elements_el-4 el">&lt;div&gt;</span>
+                <span class="elements_el-5 el">&lt;/&gt;</span>
+            </div>
+        </section>
+        <section class="work" id="service">
+            <div class="container flexbox">  
+                <h2 class="block-title">Что я делаю</h2> 
+                <ul class="service flexbox">
+                    <li class="service__item">
+                        <img class="service__img" src="img/img1.png" alt="computer">
+                        <p class="service__text">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="img/img2.png" alt="computer and other devices">
+                        <p class="service__text">Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="img/img3.png" alt="programming">
+                        <p class="service__text">Frontend&mdash;разработка и&nbsp;программирование</p>
+                    </li>
+                    <li class="service__item">
+                        <img class="service__img" src="img/img4.png" alt="coding">
+                        <p class="service__text">Исправление и&nbsp;доработка существующей вёрстки</p>
+                    </li>
+                </ul>
+                <button class="button">Узнать стоимость</button>
+            </div>
+        </section>
+        <section class="examples" id="portfolio">
+            <div class="container flexbox">
+                <h2 class="block-title">Примеры моих работ</h2>
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="img/site1.png" alt="site-1">
+                        <p class="slider__tex">Сайт психолога Веры Антоновой</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/site2.png" alt="site-2">
+                        <p class="slider__tex">Сайт магазина детской одежды</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/site3.png" alt="site-3">
+                        <p class="slider__tex">Сайт магазина "Рыболов"</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/site3.png" alt="site-3">
+                        <p class="slider__tex">Сайт магазина "Рыболов"</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/site2.png" alt="site-2">
+                        <p class="slider__tex">Сайт магазина детской одежды</p>
+                    </div>
+                </div>
+                <button class="button">Заказать проект</button>
+            </div>
+        </section> 
+        <section class="price" id="cost">
+            <div class="container">
+            <h2 class="price__title">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
+            <P class="price__text">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в зависимости от&nbsp;сложности задач.</P>
+            </div>
+            <div class="elements">
+                <span class="elements_el-1">{ }</span>
+                <span class="elements_el-2">&lt;div&gt;</span>
+                <span class="elements_el-3">#</span>
+                <span class="elements_el-4">{ }</span>
+                <span class="elements_el-5">&lt;/&gt;</span>
+            </div>   
+        </section> 
+    </main>
+    <footer class="footer">
+        <div class="container flexbox">
+            <nav class="menu">
+                <ul class="menu__list flexbox">
+                    <li class="menu__item">
+                        <a href="#service" class="menu__link">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#portfolio" class="menu__link">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#cost" class="menu__link">Стоимость</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-contacts flexbox">
+                <a href="tel:+7(499)995-77-55" class="footer-contacts__tel"><span class="icon el">&nbsp;&nbsp;&nbsp;&nbsp;</span>+7 (499) 995-77-55</a>
+                <a href="mailto:dmitry@alekseev.com" class="footer-contacts__email"><span class="icon el">&nbsp;&nbsp;&nbsp;</span>dmitry@alekseev.com</a>
+            </div>
+            <div class="footer-networks flexbox">
+                <button class="footer-networks__call">Заказать звонок</button>
+                <ul class="footer-networks__elements networks-el">
+			    	<li><a class="networks-el__1" href="#"></a></li>
+			    	<li><a class="networks-el__2" href="#"></a></li>
+			    	<li><a class="networks-el__3" href="#"></a></li>
+			    	<li><a class="networks-el__4" href="#"></a></li>
+                </ul>
+            </div>    
+        </div>
+        <div class="footer-bar">
+            <p>© Дмитрий Алексеев, 2016 – 2018</p>
+        </div>
+    </footer>
+    <div class="popup-container">
+        <div class="popup">
+            <form>
+                <h2>Заказать звонок</h2>
+                <button class="close"></button>
+                <div class="form-group">
+                    <label for="name">Введите ваше имя</label>
+                    <input id="name" type="text" class="form-control" name="user_name" placeholder="Имя">
+                </div>
+                <div class="form-group">
+                    <label for="number">Введите номер телефона</label>
+                    <input id="number" type="tel" class="form-control" name="user_phone" placeholder="+7 (___) ___-__-__">
+                </div>
+                <button class="button-popup" type="submit" value="Отправить форму">Отправить</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
