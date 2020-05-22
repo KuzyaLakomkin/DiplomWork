@@ -41,10 +41,9 @@ $(document).ready(function() {
                .animate({opacity: 1, top: '50%'}, 200);
             });
             $('body').addClass('offscroll');
-
     });
   
-    $('.button-popup, .close, .popup-container').click(function(event){
+    $('.button-popup, #close-button span, #close-button, .popup-container').click(function(event){
         if(event.target == this)
         $('.popup')
         .animate({opacity: 0, top: '45%'}, 200,

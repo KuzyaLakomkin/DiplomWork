@@ -722,18 +722,42 @@ li {
     padding: 10px;
 }
 
-.close {
-    cursor: pointer;
-    transition: 600ms;
-    margin-top: 6px;
+#close-button {
+    outline: none;
+    margin-top: 7px;
     float: right;
-    border: none;
-	outline: none;
-	padding: 0;
-    background-image: url('img/close.png');
-    background-repeat: no-repeat;
-	height: 16px;
-	width: 16px;
+    position: relative;
+    z-index: 9999; 
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}    
+
+#close-button:hover {
+    cursor: pointer;
+}
+
+#close-button  span {
+    display: block;
+    height: 2px;
+    margin-bottom: 2px;
+    width: 20px;
+    background-color: red;
+}
+   
+#close-button span:first-child {
+    -webkit-transform: translateY(4px) rotate(45deg);
+    transform:translateY(4px) rotate(45deg);
+}
+
+#close-button span:nth-child(2) {
+    -webkit-transform: rotateY(90deg); 
+    transform: rotateY(90deg);
+}
+
+#close-button span:last-child {
+    -webkit-transform: translateY(-4px) rotate(-45deg); 
+    transform: translateY(-4px) rotate(-45deg);
 }
 
 .icon {
@@ -799,9 +823,6 @@ li {
         top: 78%;
         font-size: 38px;
     }
-
-
-
 }
 
 @media (max-width: 1405px) {
@@ -952,8 +973,7 @@ li {
         transition-timing-function: linear;
         transition-duration:500ms;
     }
-       
-    
+         
     #hamburger-button.open > span:first-child {
         -webkit-transform: translateY(14px) rotate(45deg);
         transform:translateY(14px) rotate(45deg);
@@ -969,7 +989,6 @@ li {
         -webkit-transform: translateY(-14px) rotate(-45deg); 
         transform: translateY(-14px) rotate(-45deg);
     }
-    
     
     header .menu{
         position:absolute;
