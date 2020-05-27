@@ -44,9 +44,9 @@ $(document).ready(function() {
     
     });
   
-    $('#close-button span, #close-button, .popup-container').click(function(event){
+    $('.button-ok, .close-button span, #close-button, .popup-container').click(function(event){
         if(event.target == this)
-        $('.popup')
+        $('.popup, .window')
         .animate({opacity: 0, top: '45%'}, 200,
         function(){
             $(this).css('display', 'none');
@@ -95,14 +95,20 @@ $(document).ready(function() {
                 url: 'mail.php',
                 data: th.serialize(),
             }).done(() => {
-
-                console.log('Отправленно')
-              
-              th.trigger('reset');
-              $('.popup-container').fadeOut(400);
-              $('body').removeClass('offscroll');  
-            });
-
+                th.trigger('reset');
+                $('.popup')
+                    .animate({opacity: 0, top: '45%'}, 200,
+                    function(){
+                        $(this).css('display', 'none');
+                    });
+                $('.popup-container').fadeIn(400,
+                    function(){
+                       $('.window')
+                       .css('display', 'block')
+                       .animate({opacity: 1, top: '50%'}, 200);
+                    });
+                $('body').removeClass('offscroll')    
+              });
             return false;
             }
         });
