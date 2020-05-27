@@ -41,9 +41,10 @@ $(document).ready(function() {
                .animate({opacity: 1, top: '50%'}, 200);
             });
             $('body').addClass('offscroll');
+    
     });
   
-    $('.button-popup, #close-button span, #close-button, .popup-container').click(function(event){
+    $('#close-button span, #close-button, .popup-container').click(function(event){
         if(event.target == this)
         $('.popup')
         .animate({opacity: 0, top: '45%'}, 200,
@@ -98,7 +99,8 @@ $(document).ready(function() {
                 console.log('Отправленно')
               
               th.trigger('reset');
-              $('.popup-container').fadeOut(400);  
+              $('.popup-container').fadeOut(400);
+              $('body').removeClass('offscroll');  
             });
 
             return false;
