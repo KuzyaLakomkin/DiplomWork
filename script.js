@@ -44,7 +44,7 @@ $(document).ready(function() {
     
     });
   
-    $('.button-ok, .close-button span, #close-button, .popup-container').click(function(event){
+    $('.button-ok, .close-button span, .close-button, .popup-container').click(function(event){
         if(event.target == this)
         $('.popup, .window')
         .animate({opacity: 0, top: '45%'}, 200,
