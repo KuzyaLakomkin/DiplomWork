@@ -819,6 +819,14 @@ li {
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
+.social_share:hover{
+    cursor:pointer;
+}
+
+.networks-el__4 {
+    cursor: pointer;
+}
+
 @media (max-width: 1678px) {
     
     .elements_el-1 {

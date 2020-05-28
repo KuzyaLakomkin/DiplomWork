@@ -106,11 +106,11 @@ $(document).ready(function() {
                        $('.window')
                        .css('display', 'block')
                        .animate({opacity: 1, top: '50%'}, 200);
-                    });
-                $('body').removeClass('offscroll')    
+                    });   
               });
             return false;
             }
         });
     });
+    
 });
