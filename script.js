@@ -34,11 +34,11 @@ $(document).ready(function() {
 	});
 
     $('.header-contacts__call, .header-contacts__call__mobile, .button, .footer-networks__call').click( function(){
-        $('.popup-container').fadeIn(400,
+        $('.popup-container').fadeIn(300,
             function(){
                $('.popup')
                .css('display', 'block')
-               .animate({opacity: 1, top: '50%'}, 200);
+               .animate({opacity: 1, top: '50%'}, 150);
             });
             $('body').addClass('offscroll');
     
@@ -47,10 +47,10 @@ $(document).ready(function() {
     $('.button-ok, .close-button span, .close-button, .popup-container').click(function(event){
         if(event.target == this)
         $('.popup, .window')
-        .animate({opacity: 0, top: '45%'}, 200,
+        .animate({opacity: 0, top: '45%'}, 150,
         function(){
             $(this).css('display', 'none');
-            $('.popup-container').fadeOut(400);
+            $('.popup-container').fadeOut(300);
         });
         if(event.target == this)
         $('body').removeClass('offscroll');
@@ -97,15 +97,15 @@ $(document).ready(function() {
             }).done(() => {
                 th.trigger('reset');
                 $('.popup')
-                    .animate({opacity: 0, top: '45%'}, 200,
+                    .animate({opacity: 0, top: '45%'}, 150,
                     function(){
                         $(this).css('display', 'none');
                     });
-                $('.popup-container').fadeIn(400,
+                $('.popup-container').fadeIn(300,
                     function(){
                        $('.window')
                        .css('display', 'block')
-                       .animate({opacity: 1, top: '50%'}, 200);
+                       .animate({opacity: 1, top: '50%'}, 150);
                     });   
               });
             return false;

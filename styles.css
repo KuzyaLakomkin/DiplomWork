@@ -19,14 +19,8 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Awsome';
-    src: url('fonts/fontello.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
+    outline: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -73,13 +67,12 @@ li {
 }
 
 .menu__link {
-    transition: color 500ms;
+    transition: color 300ms;
     color: black;
 }
 
 .menu__link:hover {
     color:#f82370;
-    text-decoration: underline;
 }
 
 .header-contacts {
@@ -87,6 +80,7 @@ li {
 }
 
 .header-contacts__tel {
+    transition: color 300ms;
     margin-top: 36px;
     font-family: 'Roboto-Bold';
     margin-right: -174px;
@@ -96,11 +90,11 @@ li {
 }
 
 .header-contacts__tel:hover {
-    text-decoration: underline;
+    color:#f82370;
 }
 
 .header-contacts__call {
-    transition: color 500ms, background-color 600ms;
+    transition: color 300ms, background-color 600ms;
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
@@ -134,6 +128,11 @@ li {
     background: white;
     color: #f82980;
 }
+.header .fa-phone-alt {
+    font-size: 10px;
+    margin-top: -50px;
+    margin-bottom: 3px;
+}
 
 .header-contacts__call__mobile:hover {
     background: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
@@ -165,7 +164,7 @@ li {
 }
 
 .main-block.flexbox {
-    justify-content: end;
+    justify-content: start;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -191,7 +190,7 @@ li {
 
 .button {
     box-sizing: content-box;
-    transition: box-shadow 500ms;
+    transition: box-shadow 300ms;
     cursor: pointer;
     width: 268px;
     height: 58px;
@@ -347,7 +346,7 @@ li {
 }
 
 .slider .slick-arrow {
-    transition: box-shadow 500ms;
+    transition: box-shadow 300ms;
     outline: none;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -529,16 +528,24 @@ li {
 
 .footer .menu__link {
     color: #8993ad;
-    transition: color 500ms;
+    transition: color 300ms;
 }
 
 .footer .menu__link:hover {
     color:#f82370;
-    text-decoration: underline;
 }
 
 .footer-contacts {
     margin-right: -94px;
+}
+
+.footer-contacts .fa-phone-alt {
+    font-size: 20px;
+    margin-right: 24px;
+}
+
+.footer-contacts .fa-envelope {
+    margin-right: 18px;
 }
 
 .footer-contacts.flexbox {
@@ -546,7 +553,7 @@ li {
 }
 
 .footer-contacts__tel {
-    transition: color 500ms;
+    transition: color 300ms;
     color: #000000;
     font-size: 25px;
     font-weight: 400;
@@ -554,11 +561,11 @@ li {
 }
 
 .footer-contacts__tel:hover{
-    color: #8993ad
+    color:#f82370;
 }
 
 .footer-contacts__email {
-    transition: color 500ms;
+    transition: color 300ms;
     color: #000000;
     font-size: 25px;
     font-weight: 400;
@@ -566,7 +573,7 @@ li {
 }
 
 .footer-contacts__email:hover {
-    color: #8993ad
+    color:#f82370;
 }
 
 .footer-networks {
@@ -586,6 +593,7 @@ li {
 }
 
 .networks-el__1 {
+    transition: 300ms;
     margin-right: 20px;
     display: inline-block;
     box-sizing: border-box;
@@ -595,7 +603,12 @@ li {
     background-position: left;
 }
 
+.networks-el__1:hover {
+    background-image: url('img/icons-hover.png');
+}
+
 .networks-el__2 {
+    transition: 300ms;
     margin-right: 15px;
     display: inline-block;
     box-sizing: border-box;
@@ -605,7 +618,12 @@ li {
     background-position: -58px 0;
 }
 
+.networks-el__2:hover {
+    background-image: url('img/icons-hover.png');
+}
+
 .networks-el__3 {
+    transition: 300ms;
     margin-right: 16px;
     display: inline-block;
     box-sizing: border-box;
@@ -615,7 +633,12 @@ li {
     background-position: -112px 0;
 }
 
+.networks-el__3:hover {
+    background-image: url('img/icons-hover.png');
+}
+
 .networks-el__4 {
+    transition: 300ms;
     display: inline-block;
     box-sizing: border-box;
     height: 29px;
@@ -624,8 +647,12 @@ li {
     background-position: -167px 0;
 }
 
+.networks-el__4:hover {
+    background-image: url('img/icons-hover.png');
+}
+
 .footer-networks__call {
-    transition: color 600ms, background-color 500ms;
+    transition: color 300ms, background-color 250ms;
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
@@ -692,7 +719,7 @@ li {
 
 .button-popup {
     outline: none;
-    transition: box-shadow 500ms;
+    transition: box-shadow 300ms;
     cursor: pointer;
     display: block;
     margin-top: 15px;
@@ -800,7 +827,7 @@ li {
 
 .button-ok {
     outline: none;
-    transition: box-shadow 500ms;
+    transition: box-shadow 300ms;
     cursor: pointer;
     display: block;
     margin-top: 90px;
@@ -1028,7 +1055,7 @@ li {
         background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
         -webkit-transition-timing-function: linear;
         transition-timing-function: linear;
-        transition-duration:500ms;
+        transition-duration:300ms;
     }
          
     #hamburger-button.open > span:first-child {
@@ -1054,7 +1081,7 @@ li {
         height:100%;
         width: 300px;
         left:-310px;
-        transition:500ms;
+        transition:300ms;
         background-color:white;
         color:white;
         box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.75);
@@ -1175,7 +1202,7 @@ li {
     .footer-networks__call {
         margin: 0 auto;
         box-sizing: content-box;
-        transition: box-shadow 500ms;
+        transition: box-shadow 300ms;
         cursor: pointer;
         width: 320px;
         height: 68px;
@@ -1288,6 +1315,15 @@ li {
         font-size: 15px;
     }
 
+    .footer-contacts .fa-phone-alt {
+        font-size: 14px;
+        margin-right: 16px;
+    }
+    
+    .footer-contacts .fa-envelope {
+        margin-right: 12px;
+    }
+
     #hamburger-button.open > span:first-child {
         -webkit-transform: translateY(8px) rotate(45deg); 
         transform: translateY(8px) rotate(45deg);
@@ -1345,7 +1381,7 @@ li {
     .footer-networks__call {
         margin: 0 auto;
         box-sizing: content-box;
-        transition: box-shadow 500ms;
+        transition: box-shadow 300ms;
         cursor: pointer;
         width: 280px;
         height: 55px;
