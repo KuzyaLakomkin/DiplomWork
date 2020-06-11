@@ -346,6 +346,7 @@ li {
 }
 
 .slider .slick-arrow {
+    opacity: 0.7;
     transition: box-shadow 300ms;
     outline: none;
     cursor: pointer;
@@ -362,20 +363,23 @@ li {
 }
 
 .slider .slick-arrow:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    opacity: 1;
 }
 
 .slider .slick-arrow.slick-prev {
+    transition: 300ms;
     left: 0;
     margin-left: -31px;
     background: url('img/arrowp.png') 0 0 no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
+    transition: 300ms;
     right: 0;
     margin-right: -31px;
     background: url('img/arrown.png') 0 0 no-repeat;
 }
+
 
 .slider__item {
     outline: none;
@@ -716,6 +720,11 @@ li {
     display: inline-block;
     margin-bottom: 20px;
 } 
+
+.popup p {
+    font-size: 10px;
+    margin-top: -26px;
+}
 
 .button-popup {
     outline: none;

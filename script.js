@@ -9,7 +9,7 @@ $(document).ready(function() {
                 breakpoint: 1025,
                 settings: { 
                   slidesToShow: 2,
-                  slidesToScroll: 1,
+                  slidesToScroll: 2,
                   arrows:false,
                   dots: true
                 }
