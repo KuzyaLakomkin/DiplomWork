@@ -1618,9 +1618,14 @@ li {
         height: 320px;
     }
 
+    .popup p {
+        margin-top: -16px;
+        font-size: 8px;
+    }
+
     .popup h2 {
         font-size: 20px;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 
     .popup label {
@@ -1629,12 +1634,12 @@ li {
 
     .form-control {
         width: 270px;
-        margin-bottom: 21px;
+        margin-bottom: 17px;
         margin-top: 7px;
     }
 
     .popup .button-popup {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .footer .menu__item {
